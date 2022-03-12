@@ -1,3 +1,6 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
 namespace: sidecar-injector
 
 resources:
@@ -14,5 +17,4 @@ images:
 - name: sidecar-injector
   newName: docker pull docker.nimtechnology.com/nim/sidecar-injector
   newTag: latest
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
+
